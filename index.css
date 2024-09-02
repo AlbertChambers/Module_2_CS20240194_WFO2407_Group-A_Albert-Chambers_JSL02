@@ -9,7 +9,7 @@ body, html {
     transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for background and color changes */
 }
 
-#watch-container { 
+#watch-container {
     border-radius: 50px;
     background: linear-gradient(145deg, #5f9ea0, #008b8b);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -90,9 +90,7 @@ ul {
     background: #444;
 }
 
-
 #welcomeMessage {
     font-size: 1.2em;
     font-weight: 600;
-    
 }

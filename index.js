@@ -35,7 +35,7 @@ const addNewGoal = () => {
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
 ///
-let waterIntake = 0;
+var waterIntake = 0;
 const updateWaterIntake = (change) => {
     if (waterIntake + change >= 0) { // Ensure water intake doesn't go below 0
         waterIntake += change;
