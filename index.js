@@ -32,13 +32,14 @@ const addNewGoal = () => {
     goalList.appendChild(newGoal);
 };
 
-// Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
 
 ///
 let waterIntake = 0;
 const updateWaterIntake = (change) => {
-    waterIntake += change;
+    if (waterIntake + change >= 0) { // Ensure water intake doesn't go below 0
+        waterIntake += change;
+    }
     document.querySelector('#waterIntakeDisplay').textContent = `${waterIntake} glasses 💦`;
 };
 
@@ -59,7 +60,7 @@ const toggleTheme = () => {
 document.querySelector('#themeToggle').addEventListener('click', toggleTheme);
 
 const submitMealPlan = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     alert('Meal plan submitted successfully! 🍴');
 };
 
